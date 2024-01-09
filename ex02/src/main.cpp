@@ -60,8 +60,11 @@ int main()
 	std::cout << MB "Value: " GREEN << *it2 << std::endl;
 	++it2;
 	}
-	std::list<int> s2(lst);
-	std::cout << MB "Top:  " GREEN << lst.back() << MB " Copy:  " GREEN << s2.back() << std::endl;
-	std::cout << MB "Size: " GREEN << lst.size() << MB " Copy: " GREEN << s2.size() << std::endl;
+	std::list<int> l2(lst);
+	std::cout << MB "Top:  " GREEN << lst.back() << MB " Copy: " GREEN << l2.back() << std::endl;
+	std::cout << MB "Size: " GREEN << lst.size() << MB " Copy: " GREEN << l2.size() << std::endl;
+	std::list<int> l3 = lst;
+	std::cout << MB "Top:  " GREEN << lst.back() << MB " Copy: " GREEN << l3.back() << std::endl;
+	std::cout << MB "Size: " GREEN << lst.size() << MB " Copy: " GREEN << l3.size() << std::endl;
 	return 0;
 }
